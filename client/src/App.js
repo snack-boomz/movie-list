@@ -11,6 +11,8 @@ import { Search } from './components/Search';
 function App() {
 
   let [ movies, setMovies ] = useState([]);
+  let [ inputText, setInputText ] = useState("");
+  let [ searchQuery, setSearchQuery ] = useState("");
 
   useEffect(() => {
     
@@ -38,7 +40,11 @@ function App() {
 
   const gettersSetters = {
     movies,
-    setMovies
+    setMovies,
+    inputText,
+    setInputText,
+    searchQuery, 
+    setSearchQuery
   }
 
   return (

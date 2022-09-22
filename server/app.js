@@ -4,7 +4,7 @@ const port = 3001;
 
 const app = express();
 
-const { getAllMovies } = require('./database/controllers');
+const { getAllMovies /* and all other db getters and setters.... */ } = require('./database/controllers');
 
 
 app.use(cors())
