@@ -14,24 +14,24 @@ function App() {
 
   useEffect(() => {
     
-    // fetch('http://localhost:3001/')
-    // .then(response => response.json())
-    // .then(data => {
-    //   setMovies(data);
-    // })
-    // .catch(error => {
-    //   console.log("error: ", error);
-    // });
+    fetch('http://localhost:3001/')
+    .then(response => response.json())
+    .then(data => {
+      setMovies(data);
+    })
+    .catch(error => {
+      console.log("error: ", error);
+    });
 
-    const hardcodedMovies = [
-      {title: 'Mean Girls'},
-      {title: 'Hackers'},
-      {title: 'The Grey'},
-      {title: 'Sunshine'},
-      {title: 'Ex Machina'}
-    ]
+    // const hardcodedMovies = [
+    //   {title: 'Mean Girls'},
+    //   {title: 'Hackers'},
+    //   {title: 'The Grey'},
+    //   {title: 'Sunshine'},
+    //   {title: 'Ex Machina'}
+    // ]
   
-    setMovies(hardcodedMovies);
+    // setMovies(hardcodedMovies);
   }, [])
 
 
